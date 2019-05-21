@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,900,300,400&display=swap');
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #151519;
+
+}
+
+
+.text {
+	height: 100vh;
+	width: 100%;
+	background: black url(/mask-text-hover-effect/forest.jpg);
+	background-position: bottom;
+	background-size: cover;
+	font-family: 'poppins', arial black;
+	font-size: 170px;
+	text-align: center;
+	line-height: 200px;
+	font-weight: 900;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 250px;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: all 3s ease-in-out;
+
+}
+
+.container:hover .text {
+	background-size: 80% 80%;
+	
+}
+
+.bgimg {
+	height: 100vh;
+	width: 100%;
+	background: url(/mask-text-hover-effect/forest.jpg);
+	background-size: 100% 100%;
+	background-position:  center;
+	transform: rotateY(180deg);
+	transition: all 3s ease-in-out;
+}
+
+.container:hover .bgimg {
+	background-size: 150% 150%;
+}
+
